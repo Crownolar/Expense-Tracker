@@ -2,7 +2,7 @@ import React from 'react';
 import { Calendar, Trash2 } from 'lucide-react';
 import { formatCurrency } from '../utils/formatters';
 
-export default function TransactionItem({ transaction, onDelete }) {
+const TransactionItem = ({ transaction, onDelete }) => {
   return (
     <div
       className={`bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border-l-4 ${
@@ -55,3 +55,5 @@ export default function TransactionItem({ transaction, onDelete }) {
     </div>
   );
 }
+
+export default TransactionItem
